@@ -1,0 +1,61 @@
+.basket_card{
+    .basket_card_content{
+        display: flex;
+        justify-content: space-between;
+        border-bottom:1px dotted $gray-color;
+        padding:10px 20px;
+        .card_img{
+            width: 70px;
+            // height: auto;
+            height: 80px;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: $border-radius;
+            }
+        }
+        .basket_book_info{
+            width: 140px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            h5{
+                margin-bottom: 0;
+                font-size: 1.1rem;
+            }
+            button{
+                outline: none;
+                border: none;
+                background:none;
+                // background-color: aquamarine;
+                font-size: 2rem;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 7px;
+            }
+            .cart_item_price{
+                color: $main-color;
+                font-weight: 600;
+            }
+        }
+        .remove_item{
+            width: 30px;
+            i{
+              
+                font-size: 1.3rem;
+                padding: 3px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                color: #fff;
+                background-color: $secondary-color;
+                border-radius: $border-radius;
+               
+            }
+            
+        }
+
+    }
+}
